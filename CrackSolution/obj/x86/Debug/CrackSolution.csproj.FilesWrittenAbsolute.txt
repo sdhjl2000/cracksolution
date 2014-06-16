@@ -1,0 +1,5 @@
+/Users/sdhjl2000/Projects/CrackSolution/CrackSolution/obj/x86/Debug/.NETFramework,Version=v4.0.AssemblyAttribute.cs
+/Users/sdhjl2000/Projects/CrackSolution/CrackSolution/bin/Debug/CrackSolution.exe.mdb
+/Users/sdhjl2000/Projects/CrackSolution/CrackSolution/bin/Debug/CrackSolution.exe
+/Users/sdhjl2000/Projects/CrackSolution/CrackSolution/obj/x86/Debug/CrackSolution.exe
+/Users/sdhjl2000/Projects/CrackSolution/CrackSolution/obj/x86/Debug/CrackSolution.exe.mdb
