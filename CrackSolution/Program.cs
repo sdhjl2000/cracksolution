@@ -36,10 +36,8 @@ namespace CrackSolution
 			//GeneratePar (3);
 
 			int[] array=new int[]{3,4,5,7,2,4,8};
-			var result = SortHelper.BubbleSort (array);
-			foreach (var i in result) {
-				Console.WriteLine (i);
-			}
+			SortHelper.QuickSort (array,0,array.Length-1);
+		 
 			Console.ReadLine ();
 		}
 

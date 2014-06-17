@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Linq;
 namespace CrackSolution
 {
 	public class SortHelper
@@ -33,6 +33,34 @@ namespace CrackSolution
 				length--;
 			}
 			return array;
+		}
+		public static void QuickSort(int[] array,int left,int right)
+		{
+			if (left < right) {
+				int middle = array [(left + right )/ 2];
+				int i = left - 1;
+				int j = right + 1;
+				while (true) {
+					while (array [++i] < middle);
+					while (array [--j] > middle);
+					if (i >= j) {
+						break;
+					}
+					Swap (array, i, j);
+				}
+				QuickSort(array, left, i - 1);
+				QuickSort(array, j + 1, right);
+			}
+		}
+
+		private static void Swap(int[] numbers, int i, int j)
+		{
+			Console.WriteLine( string.Join (",", numbers.Select (x => x.ToString ()).ToArray ()));
+			Console.WriteLine ("Swap I:" + i.ToString () + "("+numbers[i].ToString()+") To J:" + j.ToString ()+"("+numbers[j].ToString()+")");
+			int number = numbers[i];
+			numbers[i] = numbers[j];
+			numbers[j] = number;
+			Console.WriteLine( string.Join (",", numbers.Select (x => x.ToString ()).ToArray ()));
 		}
 
 	}
